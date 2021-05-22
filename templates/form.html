@@ -1,0 +1,6 @@
+<form action="{% url 'result' %}" method="POST" enctype='multipart/form-data'>
+
+    {% csrf_token %}
+    <input type="file" id="avatar" name="avatar"  accept="image/png, image/jpeg">
+    <button type="submit">Get Prediction</button>
+</form>
